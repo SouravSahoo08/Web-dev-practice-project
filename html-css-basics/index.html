@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+</head>
+
+<body class="position-absolute top-50 start-50 translate-middle">
+    <h1 class="">Countdown timer</h1>
+    <div class="row d-flex justify-content-center">
+        <div class="col">
+            <!-- <input type="number" class="bg-dark fw-bold text-light" value="05"> -->
+            <h1 class="display-1 fw-bold text-light" id="hourDisp">59<span class="fs-3">Hr</span></h1>
+        </div>
+        <div class="col " style="width: auto;">
+            <h1 class="display-1 fw-bold text-light" id="minDisp">59<span class="fs-3">Min</span></h1>
+        </div>
+        <div class="col " style="width: auto;">
+            <h1 class="display-1 fw-bold text-light" id="secDisp">00<span class="fs-3">Sec</span></h1>
+        </div>
+        <button onclick="start()">Start</button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

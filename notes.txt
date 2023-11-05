@@ -1,0 +1,160 @@
+<|Doctype html> : declaration defines this document to be of html5
+
+<html> element is the root element of a HTML page
+<head> element contains meta info about the document
+<title> sepicies the title for the document which shows up in the browser
+<body> contains the viisible page content
+<h1> defines a large heading
+<p> defines a paragraph
+<br/> : break line (empty or self closing)
+<hr> : horizontal line
+<pre> : preserve formating
+
+<p>
+   <pre>
+	function addNum(a,b){
+	     return a+b;
+	}
+   </pre>
+</p>
+
+<tag> : opening tag, </tag> : closing tag
+
+HTML heading:
+thier are 6 type of heading from <h1> to <h6>, h1 larger and h6 smaller
+
+* HTML paragraph always starts from a new line
+
+HTML links
+it is used with <a> tag or anchor tag which basically use for navigation 
+purpose seo we can refer to any page insideof our root folder.
+eg.
+<a href = "link of the destination page">CLICK HERE</a>
+
+html images : defined with <img> tag
+
+src: source
+alt: alternative text
+title: tool tip
+eg. <img src = "path name" alt = "" title = "" width = ""/>
+
+Html List:
+<ul> : unordered list - bullet list
+<ol> : ordered list - number list
+<li> : list item
+
+eg.	<ul>
+	    <li> item 1 </li>
+	    <li> item 2</li>
+	    <li> item 3 </li> </ul>
+
+Html tables:
+<table> : parent tag
+<tr> : table row
+<td> : table data/ table collumn
+<th> : table heading
+eg.	<table border = "1">
+	  <tr>
+	      <th>Id</th>
+	      <th>name</th>
+	      <th>email</th> </tr>   //header row
+	  <tr>
+	      <td>1</td>
+	      <td>sourav</td>
+	      <td>s@gmail.com</td> </tr>  //1st row
+	  <tr>
+	      <td>2</td>
+	      <td>wowoo</td>
+	      <td>w@gmail.com</td> </tr>   //2nd row
+	</table>
+
+#shortcut in vs code
+table>tr>td*3  or  table>tr*3>td*3
+
+Html forms:
+<form> : parent elemnt
+<input> : textbox
+type = text - text box
+type = radio - radio button
+type  = checkbox - check box
+select - dropdownlist
+type=submit - submit button
+
+eg. <form>
+	Name: <input name ="username" type = "text"/></br>
+	Password: <input name =" password" "type = "password"/>
+	gender: <input type = "radio" name="gender"/> male <input type= "radio" name = "gender"/> female
+	interest : <input type= "checkbox"/> Cricket 
+	City: <select>
+		<options value = ""> delhi</option>
+		<options value = ""> pune</option>
+		<options value = ""> mumbai</option> </select>
+	       <input type = "submit" value = "submit"/>
+</form>
+
+CSS : Cascade style sheet
+used for styling web pages
+
+* css can be described in 3 wys
+1) external css : common css file for all web pages
+2) internal css : exclusivly for one web page
+3) inline css : on the fly
+
+how to write CSS?
+1) tag name - p
+2) class - .
+3) id - #
+
+ inline css has more preference or can override other.
+
+properties:
+- color
+- background-color
+- background-image
+- font-size
+- font-weight
+- padding
+- allign
+
+2:58
+
+
+
+/* 
+const countEl = document.getElementById("count_el");
+const saveEl = document.getElementById("entries_ele");
+
+let count = 0
+function increment() {
+    count += 1;
+    countEl.textContent = count;
+}
+
+let mem="";
+function save(){
+    mem = count + " - ";
+    count = 0;
+    countEl.textContent = count;
+    saveEl.textContent += mem;
+}
+
+const errTxt = document.getElementById("err-txt");
+
+function trigger(){
+    if(errTxt.style.visibility === 'hidden')
+        errTxt.style.visibility = "visible";
+    else    
+    errTxt.style.visibility = "hidden";
+}
+
+
+let num1 = document.getElementById("num1-el")
+let num2 = document.getElementById("num2-el")
+const resTxt = document.getElementById("res-el");
+
+function add(){
+    let res = Number(num1.value) + Number(num2.value);
+    resTxt.textContent = res;
+    
+}
+*/

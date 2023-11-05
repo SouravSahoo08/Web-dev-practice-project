@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            height: 40px;
+            border-radius: 20px;
+            font-size: 17px;
+            padding-top: 2px;
+            cursor: pointer;
+            margin: 5px;
+            vertical-align: top;
+        }
+
+        .amazon {
+            background-color: rgb(252, 217, 46);
+            padding-left: 70px;
+            padding-right: 70px;
+            border: none;
+            transition: background-color 0.15s, box-shadow 0.15s;
+        }
+
+        .amazon:hover {
+            background-color: rgba(247, 213, 42, 0.945); 
+            box-shadow: 2.8px 2.8px 4px rgba(0, 0, 0, 0.075);
+            padding-right: 78px;
+            padding-left: 78px;
+        }
+
+        .amazon:active {
+            opacity: 0.5;
+        }
+
+        .linkedIn-save {
+            background-color: rgb(255, 255, 255);
+            padding-left: 28px;
+            padding-right: 28px;
+            border-color: rgb(24, 125, 226);
+            border-width: 1px;
+            border-style: solid;
+            color: rgb(24, 125, 226);
+            font-weight: bold;
+            transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+            
+        }
+
+        .linkedIn-save:hover {
+            background-color: rgb(24, 125, 226);
+            color: white;
+            box-shadow: 2.8px 2.8px 4px rgba(0, 0, 0, 0.075);
+        }
+
+        .linkedIn-save:active {
+            opacity: 0.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="amazon">Add to Cart</button>
+    <button class="linkedIn-save">Save</button>
+</body>
+
+</html>
