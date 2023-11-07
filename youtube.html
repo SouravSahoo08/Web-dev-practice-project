@@ -15,19 +15,8 @@
             font-family: 'Roboto', Arial;
         }
 
-        .search-bar {
-            height: 40px;
-            width: 250px;
-            display: block;
-            padding-left: 9px;
-            margin-left: 12px;
-            background-color: rgb(255, 255, 255);
-            font-size: 16px;
-            border-color: rgb(204, 204, 204);
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 2px;
-            box-shadow: 3px 3px 5px rgba(184, 183, 183, 0.89);
+        body {
+            margin: 0;
         }
 
         .video-list-grid {
@@ -84,48 +73,119 @@
 
         /* top bar flex box */
         .top-nav-bar {
+            height: 52px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            height: 47px;
+            border-bottom: 1px solid rgb(201, 201, 201);
+        }
+
+        .search-bar {
+            height: 33px;
+            width: 332px;
+            display: block;
+            padding-left: 9px;
+            background-color: rgb(255, 255, 255);
+            font-size: 16px;
+            border-color: rgb(212, 212, 212);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
         }
 
         .left-flex {
             display: flex;
-            align-items: center;
             width: 150px;
+            height: 18px;
+            justify-content: end;
+            align-items: center;
         }
+
         .middle-flex {
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex: 1;
+            margin-left: 65px;
+            margin-right: 37px;
+            justify-content: center;
+            max-width: 440px;
         }
+
         .right-flex {
+            width: 184px;
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            width: 200px;
+            margin-inline: 12px;
+        }
+
+        .hamburger-icon,
+        .youtube-icon {
+            height: 100%;
+        }
+
+        .hamburger-icon {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .search-btn {
+            width: 65px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-inline: 19px;
+            border: 1px solid rgb(212, 212, 212);
+            border-left: 0;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .voice-search-btn {
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            padding-inline: 7px;
+            border-radius: 40px;
+            border: none;
+            background-color: rgb(247, 247, 247);
         }
     </style>
 
 </head>
 
 <body>
-    
+
     <div class="top-nav-bar">
         <div class="left-flex">
-            <img style="height: 24px; margin-inline: 24px;" src="/icons/hamburger-menu.svg" alt="">
-            <img style="height: 24px; " src="/icons/youtube-logo.svg" alt="">
+            <img src="/icons/hamburger-menu.svg" class="hamburger-icon" alt="">
+            <img src="/icons/youtube-logo.svg" class="youtube-icon" alt="">
         </div>
 
         <div class="middle-flex">
-            <input class="search-bar" type="text" placeholder="Search">
+            <input type="text" class="search-bar" placeholder="Search" id="">
+            <button class="search-btn">
+                <img src="/icons/search.svg" alt="">
+            </button>
+            <button class="voice-search-btn">
+                <img src="/icons/voice-search-icon.svg" alt="">
+            </button>
         </div>
-        <div class="right-flex">oammd</div>
+        <div class="right-flex">
+            <img style="width: 22px;" src="icons/upload.svg" alt="">
+            <img style="width: 22px;" src="icons/youtube-apps.svg" alt="">
+            <img style="width: 22px;" src="icons/notifications.svg" alt="">
+            <img style="width: 22px;" src="icons/voice-search-icon.svg" alt="">
+        </div>
     </div>
 
-   
+
     <div class="video-list-grid">
         <div class="card">
             <img class="vid-thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
