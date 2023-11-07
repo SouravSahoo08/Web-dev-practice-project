@@ -10,153 +10,9 @@
     <link rel="stylesheet" href="youtube.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            font-family: 'Roboto', Arial;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .video-list-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 8px;
-            row-gap: 16px;
-            padding: 20px;
-        }
-
-        .card {
-            width: 100%;
-            padding: 5px;
-        }
-
-        .vid-thumbnail {
-            width: 100%;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 40px 1fr;
-            gap: 10px;
-        }
-
-        .author-profile {
-            width: 100%;
-            border-radius: 30px;
-            margin-top: 15px;
-        }
-
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .vid-title {
-            font-weight: 500;
-            line-height: 22px;
-        }
-
-        .author,
-        .stats {
-            font-size: 13px;
-            font-weight: 400;
-            color: rgb(96, 96, 96);
-            line-height: 18px;
-        }
-
-        .author {
-            margin-top: 8px;
-        }
-
-
-        /* top bar flex box */
-        .top-nav-bar {
-            height: 52px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgb(201, 201, 201);
-        }
-
-        .search-bar {
-            height: 33px;
-            width: 332px;
-            display: block;
-            padding-left: 9px;
-            background-color: rgb(255, 255, 255);
-            font-size: 16px;
-            border-color: rgb(212, 212, 212);
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 3px;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-
-        }
-
-        .left-flex {
-            display: flex;
-            width: 150px;
-            height: 18px;
-            justify-content: end;
-            align-items: center;
-        }
-
-        .middle-flex {
-            display: flex;
-            flex: 1;
-            margin-left: 65px;
-            margin-right: 37px;
-            justify-content: center;
-            max-width: 440px;
-        }
-
-        .right-flex {
-            width: 184px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-inline: 12px;
-        }
-
-        .hamburger-icon,
-        .youtube-icon {
-            height: 100%;
-        }
-
-        .hamburger-icon {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-
-        .search-btn {
-            width: 65px;
-            height: 37px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-inline: 19px;
-            border: 1px solid rgb(212, 212, 212);
-            border-left: 0;
-            background-color: rgb(247, 247, 247);
-        }
-
-        .voice-search-btn {
-            width: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10px;
-            padding-inline: 7px;
-            border-radius: 40px;
-            border: none;
-            background-color: rgb(247, 247, 247);
-        }
-    </style>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
 
 </head>
 
@@ -181,10 +37,9 @@
             <img style="width: 22px;" src="icons/upload.svg" alt="">
             <img style="width: 22px;" src="icons/youtube-apps.svg" alt="">
             <img style="width: 22px;" src="icons/notifications.svg" alt="">
-            <img style="width: 22px;" src="icons/voice-search-icon.svg" alt="">
+            <img style="width: 22px;" src="icons/placeholder-dp.png" alt="">
         </div>
     </div>
-
 
     <div class="video-list-grid">
         <div class="card">
