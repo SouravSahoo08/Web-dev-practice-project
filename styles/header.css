@@ -1,6 +1,6 @@
 /* top bar flex box */
 .top-nav-bar {
-    height: 52px;
+    height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,78 +8,76 @@
     border-bottom: 1px solid rgb(201, 201, 201);
 }
 
+.left-flex {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-icon {
+    height: 20px;
+}
+
+.middle-flex {
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    align-items: center;
+    max-width: 470px;
+}
+
 .search-bar {
     height: 33px;
-    width: 332px;
-    display: block;
+    width: 0;
+    min-width: 10px;
+    flex: 1;
     padding-left: 9px;
     background-color: rgb(255, 255, 255);
     font-size: 16px;
     border-color: rgb(212, 212, 212);
     border-width: 1px;
     border-style: solid;
-    border-radius: 3px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-
+    border-radius: 1px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.left-flex {
-    display: flex;
-    width: 150px;
-    height: 18px;
-    justify-content: end;
-    align-items: center;
-}
-
-.middle-flex {
-    display: flex;
-    flex: 1;
-    margin-left: 65px;
-    margin-right: 37px;
-    justify-content: center;
-    max-width: 440px;
-}
-
-.right-flex {
-    width: 184px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-inline: 24px;
-}
-
-.hamburger-icon,
-.youtube-icon {
-    height: 100%;
-}
-
-.hamburger-icon {
-    margin-left: 20px;
-    margin-right: 20px;
+.search-bar::placeholder{
+    font-family: 'Roboto';
 }
 
 .search-btn {
-    width: 65px;
+    width: 66px;
     height: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-inline: 19px;
+    padding-top: 4px;
+    margin-left: -1px;
     border: 1px solid rgb(212, 212, 212);
-    border-left: 0;
     background-color: rgb(247, 247, 247);
 }
 
 .voice-search-btn {
     width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40px;
     margin-left: 10px;
     padding-inline: 7px;
-    border-radius: 40px;
+    padding-top: 4px;
+    border-radius: 20px;
     border: none;
     background-color: rgb(247, 247, 247);
+}
+
+.right-flex {
+    width: 184px;
+    max-width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 24px;
 }
