@@ -1,0 +1,31 @@
+.side-nav-bar{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    padding-top: 7px;
+    padding-left: 2px;
+    background-color: white;
+}
+
+.icon{
+    height: 74px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 10px;
+    font-weight: 400px;
+    line-height: 25px;
+}
+
+.icon:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+.icon-img{
+    width: 24px;
+}
