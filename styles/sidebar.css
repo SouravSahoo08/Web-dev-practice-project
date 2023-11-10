@@ -1,4 +1,4 @@
-.side-nav-bar{
+.side-nav-bar {
     position: fixed;
     top: 56px;
     left: 0;
@@ -8,24 +8,24 @@
     background-color: white;
 }
 
-.icon{
+.icon {
     height: 74px;
-    
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
-    
-    font-size: 10px;
-    font-weight: 400px;
-    line-height: 25px;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: rgb(236, 235, 235);
 }
 
-.icon-img{
+.icon img {
     width: 24px;
+}
+
+.icon p {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 6px;
 }
