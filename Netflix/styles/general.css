@@ -1,4 +1,17 @@
 body{
     margin: 0;
     font-family: 'Nunito Sans';
+    color: white;
+    background-color: rgb(34, 34, 34);
 }
+
+h1, p{
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7px;
+}
+
