@@ -1,0 +1,94 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-loader {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.589) 60%, rgba(0, 0, 0, 0.8) 100%),
+        url("../images/background-image.webp");
+    background-size: cover;
+    height: 105vh;
+    width: 100%;
+    position: relative;
+}
+
+.content{
+    height: fit-content;
+    position: absolute;
+    left: 145px;
+    right: 145px;
+    top: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0px;
+}
+
+.left-logo-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.left-logo-container img{
+    width: 135px;
+}
+
+.right-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-selector{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+    padding-inline: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    border-radius: 5px;
+    
+}
+
+.lang-icon-img{
+    margin-top: 4px;
+}
+
+.lang-selector select {
+    width: 80px;
+    border: 0;
+    padding-left: 4px;
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+}
+
+.signin-btn{
+    background-color: #e50914;
+    color: white;
+    font-weight: 700;
+    padding: 7px 15px;
+    border: 0;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.content-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 120px 0px;
+    color: white;
+}
+.content-body h1{
+    font-weight: 900;
+    font-size: 42px;
+    padding-inline: 12px;
+    text-align: center;
+}
