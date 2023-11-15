@@ -158,8 +158,16 @@ header{
     align-items: center;
 }
 
-.ad-box .left h1{
+.ad-box .text-div h1{
     font-weight: 900;
     font-size: 47px;
+}
 
+.ad-box .text-div p{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.ad-box img{
+    width: 510px;
 }
